@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home Insurance Quote Results</title>
+    <link rel="stylesheet" href="Styles/auto_home_quote_results.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <p>&#9742;+1-647-615-0190</p>
+            <p><b>&#9993;</b> Easyquotes@gmail.com</p>
+            <p>5-10 business days to process the claim</p>
+        </header>
+        <figure>
+            <img class="logo" src="Images/easyquotes.png" alt="easy quotes logo">
+        </figure>
+        <nav class="homeNav">
+            <ul class="navList">
+                <li><a id="nav_home" href="home.html">Home</a></li>
+                <li><a id="nav_home_insurance" href="home_landing.html">Home Insurance</a></li>
+                <li><a id="nav_auto_insurance" href="auto_insurance_landing.html">Auto Insurance</a></li>
+                <li><a id="nav_contact_us" href="contact_us.html">Contact Us </a></li>
+                <li><a id="nav_claims" href="claim_page.html">Claims</a></li>
+            </ul>
+        </nav>
+        <section class="advertisementFirst">
+            <img class="insuranceadv" src="Images/Insurance_adv.png" alt="Insurance Advertisement"></section>
+
+        <section class="advertisementSecond">
+            <img class="insuranceadv" src="Images/insuranceadv2.jpg" alt="Insurance Advertisement second"></section>
+
+        <progress value="80" max="100">
+        </progress>
+        <main class="smallMain">
+            <div class="background">
+                <div class="banner">
+                    <div class="scroll">
+                        <p class="paragraph">Home Insurance <b>step 3 of 3</b></p>
+                        <h2>Quote #Q008184274</h2>
+                        <p><img class="image9" src="Images/dollar-bag-green.jpg" id="fire" alt="dollar bag for premium">
+                        </p>
+                        <h3>$300.17/mo*</h3>
+                        <h3>$3600/yr*</h3>
+                        <h3>Call @ 1-647-333-2007</h3>
+                    </div>
+                </div>
+            </div>
+            <form method="get" action="auto_insurance_quote_results.html">
+                <fieldset>
+                    <legend>Please enter uour personal details</legend>
+                    <div class="customer">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required><br><br>
+                        <label>Phone Number:</label>
+                        <input type="tel" name="phone" id="phonenumber" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}]" required>
+                    </div>
+                    <div>
+                        <label>Contact me by:</label><br>
+                        <input type="radio" class="radioBtnClass" name="Contact me by:" value="Text" />Text<br>
+                        <input type="radio" class="radioBtnClass" name="Contact me by:" value="Email" />Email<br/>
+                        <input type="radio" class="radioBtnClass" name="Contact me by:" value="BothWays" />Both Text and Email<br/>
+                    </div>
+                    <input type="button" class="submitButton" value="Contact me" id="btn-submit" onclick="popup();">
+                </fieldset>
+                <!--Creates the popup body-->
+                <div class=" popup-overlay ">
+                    <!--Creates the popup content-->
+                    <div class="popup-content ">
+                        <h2><i>Hurray!!!!!</i></h2>
+                        <p> Thanks for contacting us,our representative will contact you soon.</p>
+                        <!--popup's close button-->
+                        <input type="button" class="closeButton" value="Close" id="close" onclick="popup();">
+                    </div>
+                </div>
+            </form>
+            <div class="block">
+                <p>Bundle Auto along with Home and get a discount of nearly $50/month</p>
+                <div id="flip">Click here to continue?</div>
+                <div id="panel"><a href="../UserInterface/auto_insurance_landing.html">Get an Auto Estimate</a>
+                </div>
+            </div>
+            <div class="right">
+                <p><b>Would you like to contact us?</b></p>
+                <img src="Images/5-tips-for-training-customer-service-agents.jpg" id="sky" alt="customer rep" onclick="zoomin();">
+
+                <p>Call now to buy or discuss your quote at:</p>
+                <p>1-647-333-2007</p>
+                <p>Monday - Friday 8:00 am - 8:00 pm EST</p>
+            </div>
+        </main>
+        <section class="blog">
+            <h2>Blog</h2>
+            <details open>
+                <summary class="blogHeading">Will my current homeowners insurance policy provide sufficient coverage while my home is being remodeled?</summary>
+                <p>If you are planning to move out of your home temporarily while your renovation project is completed, this can impact your existing insurance policy. This is especially true if you will be out of your home for 30 days or longer. You may
+                    need to change your home’s status to “under construction” or obtain a home vacancy permit in order to have coverage for perils like vandalism or theft while your home is unoccupied.
+                </p>
+            </details>
+            <details>
+                <summary class="blogHeading">Will my policy protect me if a contractor, subcontractor or construction worker is hurt on my property while working on my home remodel?</summary>
+                <p>The simplest answer to this complicated question is often “no.” You need to verify that your contractor carries a general liability insurance policy, and also that they are covered by workers compensation. If you do the work yourself,
+                    obviously the risk of a contractor damaging your home or being injured is not a factor. However, this doesn’t change your need to notify your insurer about remodel plans. DIY renovations are still home renovations.
+                </p>
+            </details>
+            <details>
+                <summary class="blogHeading">Get in Touch</summary>
+                <p>Planning a home renovation and need to update your homeowners insurance coverage accordingly? Our friendly, knowledgeable team of insurance brokers can help! Contact us online or give us a call at 1-888-853-5552.
+                </p>
+            </details>
+        </section>
+        <article class="pollOpinion">
+            <h2>Opinion Poll</h2>
+            <p>Do you like to get insurance on yearly basis ?</p>
+            <input type="radio" id="yes" value="yes" checked>
+            <label for="yes">yes</label>
+            <input id="no" type="radio" value="no">
+            <label for="no">no</label>
+            <h2>Poll Result</h2>
+            <p>yes</p>
+            <section class="containerPoll">
+                <div class="poll yes">90%</div>
+            </section>
+            <p>no</p>
+            <section class="containerPoll">
+                <div class="poll no">10%</div>
+            </section>
+        </article>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type='text/javascript' src="scripts/auto_home_qr_script.js"></script>
+        <footer>
+            <section class="mouse">
+                <a href="#" class="mouse-icon">
+                    <figure class="mouse-wheel"><i class="fa fa-angle-up fa-3x" aria-hidden="true"></i>
+                    </figure>
+                </a>
+            </section>
+            <section class="row footerSection">
+                <section class="footerColumnQuote">
+
+                    <h2 class="footHeading">EasyQuotes</h2>
+                    <p>Insurance got you under our wing. Without it, Insurance is like a parachute - If you don't have it when you need it, you will never need it again! </p>
+                    <ul class="socialMediaIcon">
+                        <li class=""><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a></li>
+                        <li class="ftco-animate fadeInUp ftco-animated"><a href="https://www.facebook.com/"><i class="fa fa-facebook"
+                                        aria-hidden="true"></i>
+                                </a></li>
+                        <li class="ftco-animate fadeInUp ftco-animated"><a href="https://www.instagram.com/"><i class="fa fa-instagram"
+                                        aria-hidden="true"></i>
+                                </a></li>
+                    </ul>
+                </section>
+                <section class="footerColumnMenu">
+                    <h2 class="footHeading">Menu</h2>
+                    <ul class="menuStyled">
+                        <li><a id="nav_home" href="home.html">Home</a></li>
+                        <li><a id="nav_home_insurance" href="home_landing.html">Home Insurance</a></li>
+                        <li><a id="nav_auto_insurance" href="auto_insurance_landing.html">Auto Insurance</a></li>
+                        <li><a id="nav_contact_us" href="contact_us.html">Contact Us </a></li>
+                        <li><a id="nav_claims" href="claim_page.html">Claims</a></li>
+                    </ul>
+                </section>
+                <section class="footerHelp">
+
+                    <h2 class="footHeading_help">Help</h2>
+                    <p>
+                        Looking for affordable insurance products? Insurdinary offers the best insurance rates in Canada. now you can compare Canadian insurance providers side-by-side and get the best quotes for you. Get instant Health Insurance, Life Insurance, Travel Insurance
+                        and other insurance product quotes online – fast!
+                    </p>
+                </section>
+                <section class="footerColumnQuestion">
+                    <h2 class="footHeading">Have a Questions?</h2>
+                    <ul class="locDet">
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <p>103 Triple crown avenue, Etobicoke Ontario
+                                <p>
+                        </li>
+                        <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                            <p>+1 647-615-0190</p>
+                        </li>
+                        <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                            <p>Easy@gmail.com</p>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section class="copyright">
+                <h5>Copyright ©2019 All rights reserved</h5>
+            </section>
+        </footer>
+    </div>
+</body>

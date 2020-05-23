@@ -1,0 +1,579 @@
+/* Html, body, sideSection, smallMain css start */
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	padding: 0%;
+	margin: 0%;
+}
+
+.sideSection {
+	grid-area: sideSection;
+}
+
+.blog {
+	grid-area: blog;
+}
+
+.BigScreen_view1 {
+	grid-area: BigScreen_view1;
+}
+
+.BigScreen_view2 {
+	grid-area: BigScreen_view2;
+}
+
+figure {
+	grid-area: logo;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.outer_section {
+	border-radius: 2px;
+	border-top: 6px solid white;
+	border-bottom: 6px solid white;
+	border-right: 4px solid white;
+}
+
+#auto {
+	background-color: #AED7D5;
+}
+
+#home {
+	background-color: #def2f1;
+}
+
+.tablink:hover {
+	background-color: #777;
+}
+
+fieldset {
+	border-width: 4px;
+	background-color: white;
+}
+
+a {
+	color: inherit;
+}
+
+#feedback_frm span
+{
+color:red;
+padding-left: 2px;
+}
+#reqd_note
+{
+	font-size: 12px;
+}
+
+/* Html, body, pollOpinion, smallMain css end */
+
+
+/*Header Css start*/
+
+header {
+	grid-area: header;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color: #3AAFA9;
+}
+
+.homeNav {
+	grid-area: nav;
+}
+
+.navList {
+	text-decoration: none;
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+}
+
+.navList li a {
+	text-decoration: none;
+	list-style-type: none;
+	color: #3AAFA9;
+	font-weight: bold;
+	width: 30%;
+	padding-top: 1.5%;
+	margin-right: 20px;
+}
+
+
+/*Header Css end*/
+
+
+/* form popup css start*/
+
+
+/* The Modal (background) */
+
+.modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 1;
+	/* Sit on top */
+	padding-top: 100px;
+	/* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background-color: rgb(0, 0, 0);
+	/* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4);
+	/* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+	background-color: #def2f1;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+
+/* The Close Button */
+
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#myBtn {
+	background-color: #3AAFA9;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+
+/*form popup css end*/
+
+
+/*Footer Css start*/
+
+footer {
+	grid-area: foot;
+	background-color: #3AAFA9;
+	color: black;
+	text-align: center;
+	width: 100%;
+}
+
+li>a {
+	text-decoration: none;
+}
+
+.footerSection {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.socialMediaIcon {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	margin-left: 60%;
+}
+
+.socialMediaIcon li {
+	float: left;
+	padding: 3%;
+}
+
+.copyright {
+	width: 100%;
+}
+
+.footerColumnMenu {
+	width: 25%;
+	padding-left: 2%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.footerHelp {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.footerColumnQuestion {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.footerColumnQuote {
+	display: flex;
+	width: 25%;
+	flex-direction: column;
+	align-items: center;
+}
+
+ul.menuStyled,
+ul.locDet {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menuStyled li {
+	list-style-type: none;
+	padding-top: 12px;
+	text-align: left;
+}
+
+h2.footHeading {
+	text-align: left;
+}
+
+.menuStyled li a {
+	text-decoration: none;
+}
+
+
+/*Footer Css end*/
+
+
+/*Big Screen*/
+
+@media only screen and (min-width: 1201px) {
+	.logo {
+		height: 50px;
+	}
+	/*Wrapper class css start*/
+	.wrapper {
+		display: grid;
+		width: 95%;
+		margin: auto;
+		grid-template-areas: 'header header header' 'logo logo logo' 'nav nav nav' 'BigScreen_view1 BigScreen_view1 sideSection' 'BigScreen_view2 BigScreen_view2 sideSection' 'foot foot foot' 'foot foot foot'
+	}
+	/*Wrapper class css end*/
+	/*Main screen css start*/
+	.BigScreen_view1,
+	.BigScreen_view2 {
+		width: 100%;
+	}
+	.BigScreen_view1 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: stretch;
+		background-image: linear-gradient(90deg, #f0f8fa, #f7f9fa);
+	}
+	.BigScreen_view2 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.BigScreen_view1>a,
+	.BigScreen_view2>a {
+		margin: 1%;
+	}
+	.claim_img {
+		padding: 0px;
+		margin: 0px;
+	}
+	.tablink {
+		background-color: #555;
+		color: #3AAFA9;
+		float: left;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 40px;
+		font-size: 17px;
+	}
+	.tabcontent {
+		color: black;
+		display: none;
+		padding: 100px 20px;
+		height: 100%;
+		font-size: 17px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	.claim_img {
+		padding-bottom: 80px;
+		padding-top: 80px;
+	}
+	/*Main screen css end*/
+	/*Sidebar screen css start*/
+	.sideSection {
+		padding: 1%;
+		margin: 1%;
+		border-color: #555;
+		border-width: 4px;
+		border-style: solid;
+		border-radius: 12px;
+	}
+	/*Sidebar screen css end*/
+	/*form css start*/
+	#feedback_frm {
+		padding: 31px;
+		font-size: 17px;
+	}
+	#acct_info label {
+		padding-right: 10px;
+	}
+	#acct_info div {
+		display: flex;
+		justify-content: stretch;
+		padding: 5px;
+	}
+	#setting_info div {
+		padding: 3px;
+	}
+	#submit_btn {
+		padding: 10px;
+		background-color: #2b7a78;
+	}
+	/*form css end*/
+}
+
+
+/*Small Screen*/
+
+@media only screen and (max-width: 992px) {
+	/*Wrapper section css start*/
+	.wrapper {
+		display: grid;
+		width: 100%;
+		height: 100%;
+		margin: auto;
+		grid-template-areas: 'header header header header' 'logo logo logo logo' 'nav nav nav nav' 'BigScreen_view2 BigScreen_view2 BigScreen_view2 BigScreen_view2' 'BigScreen_view2 BigScreen_view2 BigScreen_view2 BigScreen_view2' 'foot foot foot foot'
+	}
+	/*Wrapper section css end*/
+	/*Header section css start*/
+	.navList li a {
+		font-size: 10px;
+	}
+	li>a {
+		text-decoration: none;
+		font-size: 0.75em;
+	}
+	.navList {
+		justify-content: center;
+	}
+	/*Header section css end*/
+	/*Footer section css start*/
+	.footerColumnQuestion {
+		margin-left: 2%;
+		padding-left: 3%;
+		padding-right: 1%;
+	}
+	h5 {
+		text-align: center;
+	}
+	/*Footer section css end*/
+	/*Main section css start*/
+	.BigScreen_view1 {
+		display: none;
+	}
+	h5 {
+		text-align: center;
+	}
+	.tabcontent {
+		color: black;
+		display: none;
+		padding: 100px 20px;
+		height: 100%;
+		font-size: 12px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	.tablink {
+		background-color: #555;
+		color: #3AAFA9;
+		float: left;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 40px;
+		font-size: 14px;
+	}
+	/*Main section css end*/
+	/*side section start*/
+	.sideSection {
+		display: none;
+	}
+	/*side section end*/
+	@-webkit-keyframes fade {
+		from {
+			opacity: .4
+		}
+		to {
+			opacity: 1
+		}
+	}
+	@keyframes fade {
+		from {
+			opacity: .4
+		}
+		to {
+			opacity: 1
+		}
+	}
+	.logo {
+		height: 46px;
+		margin-left: 12%;
+	}
+	/*form css start*/
+	#feedback_frm {
+		padding: 15px;
+		font-size: 17px;
+	}
+	#acct_info label {
+		padding-right: 5px;
+	}
+	#acct_info div {
+		padding: 5px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: stretch;
+	}
+	#setting_info div {
+		padding: 3px;
+	}
+	#submit_btn {
+		padding: 10px;
+		background-color: #2b7a78;
+	}
+	#commenr_box {
+		width: 350px;
+	}
+	/*form css end*/
+}
+
+
+/*Medium Screen*/
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+	/*Wrapper css start*/
+	.wrapper {
+		display: grid;
+		width: 95%;
+		margin: auto;
+		grid-template-areas: 'header header' 'logo logo' 'nav nav' 'BigScreen_view1 BigScreen_view1' 'BigScreen_view1 BigScreen_view1' 'BigScreen_view2 BigScreen_view2' 'BigScreen_view2 BigScreen_view2' 'foot foot'
+	}
+	/*Wrapper css end*/
+	/*Main section css start*/
+	.BigScreen_view1,
+	.BigScreen_view2 {
+		width: 100%;
+	}
+	.BigScreen_view1 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: stretch;
+		background-image: linear-gradient(90deg, #f0f8fa, #f7f9fa);
+	}
+	.BigScreen_view2 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.BigScreen_view1>a,
+	.BigScreen_view2>a {
+		margin: 1%;
+	}
+	.tablink {
+		background-color: #555;
+		color: #3AAFA9;
+		float: left;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 40px;
+		font-size: 17px;
+	}
+	.tabcontent {
+		color: black;
+		display: none;
+		padding: 100px 20px;
+		height: 100%;
+		font-size: 14px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	/*Main section css end*/
+	/*side section start*/
+	.sideSection {
+		display: none;
+	}
+	/*side section end*/
+	/*Footer section start*/
+	.footerColumnQuestion {
+		margin-left: 2%;
+	}
+	/*Footer section end*/
+	.logo {
+		height: 50px;
+	}
+	/*form css start*/
+	#feedback_frm {
+		padding: 31px;
+		font-size: 17px;
+	}
+	#acct_info label {
+		padding-right: 10px;
+	}
+	#acct_info div {
+		display: flex;
+		justify-content: stretch;
+		padding: 5px;
+	}
+	#setting_info div {
+		padding: 3px;
+	}
+	#submit_btn {
+		padding: 10px;
+		background-color: #2b7a78;
+	}
+	/*form css end*/
+}

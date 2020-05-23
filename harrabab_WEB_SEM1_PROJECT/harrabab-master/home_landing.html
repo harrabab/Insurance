@@ -1,0 +1,128 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <title>Home Landing Insurance Page</title>
+    <link rel="stylesheet" href="styles/home_landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="insurance select pages">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/faq.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h6>&#9742;+1-647-615-0190</h6>
+            <h6><b>&#9993;</b> Easyquotes@gmail.com</h6>
+            <h6>5-10 business days to process the claim</h6>
+        </header>
+
+        <figure>
+            <img class="logo" src="Images/easyquotes.png" alt="easy quotes logo">
+        </figure>
+
+        <nav class="homeNav">
+            <ul class="navList">
+                <li><a id="home_text" href="index.html">Home</a></li>
+                <li><a id="home_insurance" href="home_landing.html">Home Insurance</a></li>
+                <li><a id="auto_insurance" href="auto_insurance_landing.html">Auto Insurance</a></li>
+                <li><a id="nav_claims" href="claim_page.html">Claims</a></li>
+                <li><a id="nav_contact_us" href="contact_us.html">Contact Us </a></li>
+            </ul>
+        </nav>
+
+        <section class="mainstyle">
+            <form name="quote_form" id="select_insurance">
+                <div class="head_form">
+                    <h1>QUOTE NOW</h1>
+                </div>
+                <div class="row_feilds">
+                    <input type='text' name="postalcode" placeholder="Postal code" id="insu_postal">
+                    <span id="error_postal"></span>
+                    <select name="insurance_type" id="insure_type">
+                        <option value="">Please select an option</option>
+                        <option value="home_ins">Home insurance</option>
+                        <option value="auto_ins">auto insurance</option>
+                    </select>
+                    <span id="error_type"></span>
+                </div>
+                <div class="foot_form"><a class="btn btn_sub" href="javascript:void(0)" id="select_btns"><i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i></a>
+                </div>
+            </form>
+        </section>
+
+        <section class="mainsecond">
+            <img class="selectImage" src="Images/houseHeader.png" alt="Home Insurance">
+        </section>
+
+        <footer>
+            <section class="mouse">
+                <a href="#" class="mouse-icon">
+                    <figure class="mouse-wheel"><i class="fa fa-angle-up fa-3x" aria-hidden="true"></i>
+                    </figure>
+                </a>
+            </section>
+
+            <section class="row footerSection">
+                <section class="footerColumnQuote">
+                    <h2 class="footHeading">EasyQuotes</h2>
+                    <p>Insurance got you under our wing. Without it, Insurance is like a parachute - If you don't have it when you need it, you will never need it again! </p>
+                    <ul class="socialMediaIcon">
+                        <li class=""><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i>
+                                        </a></li>
+                        <li class="ftco-animate fadeInUp ftco-animated"><a href="https://www.facebook.com/"><i class="fa fa-facebook"
+                                                aria-hidden="true"></i>
+                                        </a></li>
+                        <li class="ftco-animate fadeInUp ftco-animated"><a href="https://www.instagram.com/"><i class="fa fa-instagram"
+                                                aria-hidden="true"></i>
+                                        </a></li>
+                    </ul>
+                </section>
+
+                <section class="footerColumnMenu">
+                    <h2 class="footHeading">Menu</h2>
+                    <ul class="menuStyled">
+                        <li><a id="nav_home" href="home.html">Home</a></li>
+                        <li><a id="nav_home_insurance" href="home_landing.html">Home Insurance</a></li>
+                        <li><a id="nav_auto_insurance" href="auto_insurance_landing.html">Auto Insurance</a></li>
+                        <li><a id="nav_contact_us" href="contact_us.html">Contact Us </a></li>
+                        <li><a id="nav_claims" href="claim_page.html">Claims</a></li>
+                    </ul>
+                </section>
+
+                <section class="footerHelp">
+                    <h2 class="footHeading_help">Help</h2>
+                    <p>
+                        Looking for affordable insurance products? Insurdinary offers the best insurance rates in Canada. now you can compare Canadian insurance providers side-by-side and get the best quotes for you. Get instant Health Insurance, Life Insurance, Travel Insurance
+                        and other insurance product quotes online – fast!
+                    </p>
+                </section>
+
+                <section class="footerColumnQuestion">
+                    <h2 class="footHeading">Have a Questions?</h2>
+                    <ul class="locDet">
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <p>103 Triple crown avenue, Etobicoke Ontario
+                                <p>
+                        </li>
+                        <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                            <p>+1 647-615-0190</p>
+                        </li>
+                        <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                            <p>Easy@gmail.com</p>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="copyright">
+                <h5>Copyright ©2019 All rights reserved</h5>
+            </section>
+        </footer>
+    </div>
+
+</body>
+
+</html>

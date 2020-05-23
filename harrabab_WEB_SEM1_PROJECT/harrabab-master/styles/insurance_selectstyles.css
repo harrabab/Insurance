@@ -1,0 +1,731 @@
+/* Html, body, pollOpinion, smallMain css start */
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	padding: 0%;
+	margin: 0%;
+}
+
+.styleselectone {
+	grid-area: styleselectone;
+	background-color: #def2f1;
+}
+
+.styleselectsecond {
+	grid-area: styleselectsecond;
+	background-color: #def2f1;
+}
+
+figure {
+	grid-area: logo;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.styleselectone,
+.styleselectsecond {
+	width: 100%;
+}
+
+.styleselectone {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.styleselectsecond {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+a {
+	color: inherit;
+}
+
+
+/* Html, body, pollOpinion, smallMain css end */
+
+
+/*landing page css start*/
+
+.insuranceland_view_one {
+	grid-area: insuranceland_view_one;
+}
+
+.insuranceland_view_two {
+	grid-area: insuranceland_view_two;
+}
+
+.blog {
+	grid-area: blog;
+}
+
+.sideSection {
+	grid-area: sideSection;
+}
+
+a {
+	color: inherit;
+}
+
+
+/* landing page css end*/
+
+
+/*landing page content section start*/
+
+.insure_content {
+	font-size: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.container_counter {
+	width: 100%;
+}
+
+.row_counter {
+	font-size: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	background: rgb(85, 85, 85);
+	background: linear-gradient(75deg, rgba(85, 85, 85, 1) 21%, rgba(232, 24, 106, 1) 51%, rgba(43, 122, 120, 0.9895308465182948) 79%);
+}
+
+.counter {
+	animation-duration: 1s;
+	animation-delay: 0s;
+	color: black;
+}
+
+.insure_content h4 {
+	color: #2b7a78;
+}
+
+.insuranceland_view_one h1 {
+	font-size: 30px;
+}
+
+.insuranceland_view_two h3 {
+	font-size: 25px;
+	color: #2b7a78;
+}
+
+.insuranceland_view_two p {
+	font-size: 20px;
+	text-align: center;
+}
+
+.aside_auto {
+	line-height: 3;
+}
+
+.quoteNow {
+	color: black;
+	font-weight: bold;
+	font-size: 25px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.quote_btn {
+	color: white;
+	font-weight: bold;
+	font-size: 19px;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 26px;
+	background: #2b7a78;
+	margin: 34px;
+}
+
+.insuranceland_view_one,
+.insuranceland_view_two {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+/* landing page content section end*/
+
+
+/*landing page flipper content css start*/
+
+.flip-card {
+	background-color: transparent;
+	width: 250px;
+	height: 250px;
+	perspective: 1000px;
+}
+
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+.flip-card-front {
+	background-color: #def2f1;
+	color: black;
+}
+
+.flip-card-back {
+	background-color: #555;
+	color: white;
+	transform: rotateY(180deg);
+	line-height: 35px;
+}
+
+
+/*landing page flipper content css end*/
+
+
+/*select page  form style css start*/
+
+.btn {
+	border: none;
+	color: black;
+	padding: 12px 16px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.head_form h1 {
+	color: #2b7a78;
+}
+
+#error_postal,
+#error_address {
+	margin-bottom: 21px;
+}
+
+
+/*select page  form style css end*/
+
+
+/*Header Css start*/
+
+header {
+	grid-area: header;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color: #3AAFA9;
+}
+
+.homeNav {
+	grid-area: nav;
+}
+
+.navList {
+	text-decoration: none;
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+}
+
+.navList li a {
+	text-decoration: none;
+	list-style-type: none;
+	color: #3AAFA9;
+	font-weight: bold;
+	width: 30%;
+	padding-top: 1.5%;
+	margin-right: 20px;
+}
+
+
+/*Header Css end*/
+
+
+/*Footer Css start*/
+
+footer {
+	grid-area: foot;
+	background-color: #3AAFA9;
+	color: black;
+	text-align: center;
+	width: 100%;
+}
+
+li>a {
+	text-decoration: none;
+}
+
+.footerSection {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.socialMediaIcon {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	margin-left: 60%;
+}
+
+.socialMediaIcon li {
+	float: left;
+	padding: 3%;
+}
+
+.copyright {
+	width: 100%;
+}
+
+.footerColumnMenu {
+	width: 25%;
+	padding-left: 2%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.footerHelp {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.footerColumnQuestion {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.footerColumnQuote {
+	display: flex;
+	width: 25%;
+	flex-direction: column;
+	align-items: center;
+}
+
+ul.menuStyled,
+ul.locDet {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menuStyled li {
+	list-style-type: none;
+	padding-top: 12px;
+	text-align: left;
+}
+
+h2.footHeading {
+	text-align: left;
+}
+
+.menuStyled li a {
+	text-decoration: none;
+}
+
+
+/*Footer Css end*/
+
+
+/*Big Screen*/
+
+@media only screen and (min-width: 1201px) {
+	/*Wrapper class css start*/
+	.wrapper {
+		display: grid;
+		width: 95%;
+		margin: auto;
+		grid-template-areas: 'header header header' 'logo logo logo' 'nav nav nav' 'styleselectone styleselectone styleselectone' 'styleselectsecond styleselectsecond styleselectsecond' 'foot foot foot' 'foot foot foot'
+	}
+	/*Wrapper class css end*/
+	/*form css start*/
+	.row_feilds {
+		display: flex;
+		flex-direction: column;
+	}
+	#insure_select {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		background-color: #e2e9ef;
+		width: 768px;
+		height: 160px;
+	}
+	.head_form {
+		border-right: 1px solid black;
+		padding-right: 60px;
+	}
+	#error_postal,
+	#error_address {
+		margin-bottom: 21px;
+	}
+	/*form css end*/
+	/*landing page content section css start*/
+	.insure_content h5 {
+		padding: 12px;
+		font-weight: normal;
+	}
+	.carinsuran_img {
+		height: 250px;
+		width: 500px;
+		border-color: #2b7a78;
+		border-width: 4px;
+		border-style: solid;
+		border-radius: 12px;
+	}
+	.counter-sec {
+		text-align: center;
+		padding-bottom: 30px;
+	}
+	.counter-sec:last-child {
+		border-right: 0px solid black;
+	}
+	.counter-sec h3 {
+		color: #def2f1;
+	}
+	/*landing page content section css end*/
+	/*landing page sidebar section css start*/
+	.sideSection {
+		padding: 1%;
+		margin: 1%;
+		border-color: #2b7a78;
+		background-color: #def2f1;
+		border-width: 4px;
+		border-style: solid;
+		border-radius: 12px;
+	}
+	/*landing page sidebar section css ends*/
+	/*landing page blog css start*/
+	.blog {
+		padding: 1%;
+		margin: 1%;
+		border-color: #2b7a78;
+		border-width: 4px;
+		border-style: solid;
+		border-radius: 12px;
+		background-color: #def2f1;
+	}
+	.blogHeading {
+		font-weight: bold;
+	}
+	.collapsible {
+		background-color: #2b7a78;
+		color: white;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		font-size: 15px;
+		margin-bottom: 5px;
+	}
+	.active,
+	.collapsible:hover {
+		background-color: #555;
+	}
+	.content {
+		padding: 0 18px;
+		display: none;
+		overflow: hidden;
+	}
+	/*landing page blog css end*/
+	/*landing page Wrapper css start*/
+	.wrapper_landing {
+		display: grid;
+		width: 95%;
+		margin: auto;
+		grid-template-areas: 'header header header' 'logo logo logo' 'nav nav nav' 'insuranceland_view_one insuranceland_view_one sideSection' 'insuranceland_view_one insuranceland_view_one sideSection' 'insuranceland_view_two insuranceland_view_two blog' 'insuranceland_view_two insuranceland_view_two blog' 'foot foot foot' 'foot foot foot'
+	}
+	/*landing page Wrapper css end*/
+	.logo {
+		height: 46px;
+	}
+}
+
+
+/*Small Screen*/
+
+@media only screen and (max-width: 992px) {
+	/*main screen css start*/
+	.styleselectsecond {
+		display: none;
+	}
+	/*main screen css end*/
+	/*Wrapper class css start*/
+	.wrapper {
+		display: grid;
+		width: 100%;
+		height: 100%;
+		margin: auto;
+		grid-template-areas: 'header header header header' 'logo logo logo logo' 'nav nav nav nav' 'styleselectone styleselectone styleselectone styleselectone' 'styleselectsecond styleselectsecond styleselectsecond styleselectsecond' 'foot foot foot foot'
+	}
+	/*Wrapper class css end*/
+	/*form css start*/
+	h5 {
+		text-align: center;
+	}
+	#insure_select {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.row_feilds {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 20px;
+	}
+	@-webkit-keyframes fade {
+		from {
+			opacity: .4
+		}
+		to {
+			opacity: 1
+		}
+	}
+	@keyframes fade {
+		from {
+			opacity: .4
+		}
+		to {
+			opacity: 1
+		}
+	}
+	/*form css end*/
+	/*Header section css start*/
+	.navList li a {
+		font-size: 10px;
+	}
+	li>a {
+		text-decoration: none;
+		font-size: 0.75em;
+	}
+	H2 {
+		font-size: 1em;
+	}
+	p {
+		font-size: 12px;
+	}
+	/*Header section css end*/
+	/*Footer section css start*/
+	.footerColumnQuestion {
+		margin-left: 2%;
+		padding-left: 3%;
+		padding-right: 1%;
+	}
+	/*Footer section css end*/
+	.navList {
+		justify-content: center;
+	}
+	.logo {
+		height: 46px;
+	}
+	/*landing page content section css start*/
+	.carinsuran_img {
+		height: 250px;
+		width: 350px;
+		border-color: #2b7a78;
+		border-width: 4px;
+		border-style: solid;
+		border-radius: 12px;
+	}
+	.insure_content {
+		font-size: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+		padding-bottom: 20px;
+	}
+	.container_counter {
+		width: 100%;
+	}
+	.row_counter {
+		font-size: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+		background: rgb(85, 85, 85);
+		background: linear-gradient(180deg, rgba(85, 85, 85, 1) 23%, rgba(232, 24, 106, 1) 52%, rgba(43, 122, 120, 0.9895308465182948) 80%);
+	}
+	.counter-sec h3 {
+		color: #def2f1;
+	}
+	/*landing page  content section css ends*/
+	/*landing page flipper content css start*/
+	.flip-card {
+		padding-top: 20px;
+	}
+	/*landing page flipper content css start*/
+	/*landing page sidebar section css start*/
+	.sideSection {
+		padding: 1%;
+		margin: 1%;
+		border-color: #8ea794;
+		background-color: #def2f1;
+		border-width: 1px;
+		border-style: solid;
+		border-radius: 12px;
+	}
+	/*landing page sidebar section css end*/
+	/*Wrapper css start*/
+	.wrapper_landing {
+		display: grid;
+		width: 100%;
+		height: 100%;
+		margin: auto;
+		grid-template-areas: 'header header header header' 'logo logo logo logo' 'nav nav nav nav' 'insuranceland_view_one insuranceland_view_one insuranceland_view_one insuranceland_view_one' 'insuranceland_view_two insuranceland_view_two insuranceland_view_two insuranceland_view_two' 'sideSection sideSection sideSection sideSection' 'foot foot foot foot'
+	}
+	/*Wrapper css end*/
+	/*landing page blog css start*/
+	.blog {
+		display: none;
+	}
+	/*landing page blog css ends*/
+}
+
+
+/*Medium Screen*/
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+	.logo {
+		height: 50px;
+	}
+	/*Wrapper class css start*/
+	.wrapper {
+		display: grid;
+		width: 95%;
+		margin: auto;
+		grid-template-areas: 'header header' 'logo logo' 'nav nav' 'styleselectone styleselectone' 'styleselectsecond styleselectsecond' 'foot foot'
+	}
+	/*Wrapper class css end*/
+	/*form css start*/
+	#insure_select {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		background-color: #e2e9ef;
+		width: 768px;
+		height: 160px;
+	}
+	.head_form {
+		border-right: 1px solid black;
+		padding-right: 60px;
+	}
+	.row_feilds {
+		display: flex;
+		flex-direction: column;
+	}
+	/*form css end*/
+	/*Header section css start*/
+	.navList li a {
+		font-size: 10px;
+	}
+	li>a {
+		text-decoration: none;
+		font-size: 0.75em;
+	}
+	H2 {
+		font-size: 1em;
+	}
+	p {
+		font-size: 12px;
+	}
+	/*Header section css end*/
+	/*Footer section css start*/
+	.footerColumnQuestion {
+		margin-left: 2%;
+		padding-left: 3%;
+		padding-right: 1%;
+	}
+	h5 {
+		text-align: center;
+	}
+	/*Footer section css end*/
+	/*landing page blog css start*/
+	.blog {
+		display: none;
+	}
+	/*landing page blog css ends*/
+	/*landing page  content section css start*/
+	.insuranceland_view_one,
+	.insuranceland_view_two {
+		width: 100%;
+	}
+	.auto_ins_bttn {
+		text-decoration: none;
+	}
+	.counter-sec h3 {
+		color: #def2f1;
+	}
+	/*landing page  content section css end*/
+	/*Wrapper css start*/
+	.wrapper_landing {
+		display: grid;
+		width: 95%;
+		margin: auto;
+		grid-template-areas: 'header header' 'logo logo' 'nav nav' 'insuranceland_view_one insuranceland_view_one' 'insuranceland_view_two insuranceland_view_two' 'sideSection sideSection' 'foot foot'
+	}
+	/*Wrapper css end*/
+	/*landing page sidebar section css start*/
+	.sideSection {
+		padding: 1%;
+		margin: 1%;
+		border-color: #2b7a78;
+		background-color: #def2f1;
+		border-width: 4px;
+		border-style: solid;
+		border-radius: 12px;
+	}
+	/*landing page sidebar section css end*/
+}

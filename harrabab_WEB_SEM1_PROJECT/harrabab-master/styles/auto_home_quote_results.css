@@ -1,0 +1,728 @@
+/* Html, body, pollOpinion, smallMain css start */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+.error_Msg {
+    color: #fa4b2a;
+    padding-left: 10px;
+}
+
+.popup-overlay {
+    /*Hides pop-up when there is no "active" class*/
+    visibility: hidden;
+    position: absolute;
+    background: #ffffff;
+    border: 3px solid #666666;
+    width: 50%;
+    height: 20%;
+    left: 25%;
+}
+
+.popup-overlay.active {
+    /*displays pop-up when "active" class is present*/
+    visibility: visible;
+    text-align: center;
+}
+
+.popup-content {
+    /*Hides pop-up content when there is no "active" class */
+    visibility: hidden;
+}
+
+.popup-content.active {
+    /*Shows pop-up content when "active" class is present */
+    visibility: visible;
+}
+
+.pollOpinion {
+    grid-area: pollOpinion;
+}
+
+.blog {
+    grid-area: blog;
+}
+
+.advertisementFirst {
+    grid-area: advertisementFirst;
+}
+
+.advertisementSecond {
+    grid-area: advertisementSecond;
+}
+
+.smallMain {
+    grid-area: smallMain;
+}
+
+figure {
+    grid-area: logo;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#fire {
+    width: 10%;
+    height: 20%;
+}
+
+.grow {
+    text-align: center
+}
+
+.grow:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+}
+
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-size: 50px;
+    color: #E6E6FA;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#myProgress {
+    width: 100%;
+    background-color: #ddd;
+}
+
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: #4CAF50;
+}
+
+
+/* Html, body, pollOpinion, smallMain css start */
+
+
+/*Header Css start*/
+
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #3AAFA9;
+}
+
+.homeNav {
+    grid-area: nav;
+}
+
+.navList {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.navList li a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #3AAFA9;
+    font-weight: bold;
+    width: 30%;
+    padding-top: 1.5%;
+    margin-right: 20px;
+}
+
+
+/*Header Css end*/
+
+
+/*Footer Css start*/
+
+footer {
+    grid-area: foot;
+    background-color: #3AAFA9;
+    color: black;
+    text-align: center;
+    width: 100%;
+}
+
+li>a {
+    text-decoration: none;
+}
+
+.footerSection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.socialMediaIcon {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-left: 60%;
+}
+
+.socialMediaIcon li {
+    float: left;
+    padding: 3%;
+}
+
+.copyright {
+    width: 100%;
+}
+
+.footerColumnMenu {
+    width: 25%;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footerHelp {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footerColumnQuestion {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footerColumnQuote {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul.menuStyled,
+ul.locDet {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menuStyled li {
+    list-style-type: none;
+    padding-top: 12px;
+    text-align: left;
+}
+
+h2.footHeading {
+    text-align: left;
+}
+
+.menuStyled li a {
+    text-decoration: none;
+}
+
+
+/*Footer Css end*/
+
+
+/*Field set, submit button and input tags css start*/
+
+fieldset {
+    background-color: #DEF2F1;
+}
+
+.dropdownSelect {
+    width: 52%;
+    height: 100%;
+}
+
+.inputText {
+    width: 52%;
+    height: 100%;
+}
+
+.submitButton {
+    background-color: #3AAFA9;
+    color: white;
+    padding: 0;
+    border: 0;
+    height: 30px;
+    width: 51px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 3px;
+    width: 100px;
+}
+
+.closeButton {
+    background-color: #3AAFA9;
+    color: white;
+    padding: 0;
+    border: 0;
+    height: 30px;
+    width: 51px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 3px;
+    width: 100px;
+}
+
+
+/*Field set and input tags css end*/
+
+
+/* Progress bar css start*/
+
+progress {
+    width: 100%;
+    background-color: #3AAFA9;
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+    height: 70%;
+}
+
+.myBar {
+    width: 10%;
+    height: 30px;
+    background-color: #3AAFA9;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    height: 100%;
+}
+
+progress {
+    grid-area: progressbar;
+}
+
+#register {
+    margin-top: 5%;
+    border: 1px lavender solid;
+    font-style: italic;
+}
+
+.scroll {
+    height: 300px;
+}
+
+#panel,
+#flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+
+.image9 {
+    width: 40px;
+    height: 60px;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+}
+
+
+/* Progress bar css end*/
+
+
+/*Small Screen*/
+
+@media only screen and (max-width: 992px) {
+    /* Progress bar css start*/
+    progress::-webkit-progress-value {
+        background: #3AAFA9;
+    }
+    progress {
+        margin-top: 1%;
+        margin-bottom: 1%;
+        height: 100%;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    /* Progress bar css end*/
+    /*Header section css start*/
+    .navList li a {
+        font-size: 10px;
+    }
+    li>a {
+        text-decoration: none;
+        font-size: 0.75em;
+    }
+    H2 {
+        font-size: 1em;
+    }
+    p {
+        font-size: 12px;
+    }
+    /*Header section css end*/
+    .smallMain {
+        margin-top: 2%;
+    }
+    h5 {
+        text-align: center;
+    }
+    section {
+        display: none;
+    }
+    /*Poll section css start*/
+    .pollOpinion {
+        display: none;
+    }
+    /*Poll section css end*/
+    /*Blog section css start*/
+    .blog {
+        display: none;
+    }
+    /*Blog section css end*/
+    /*Footer section css start*/
+    .footerColumnQuestion {
+        margin-left: 2%;
+        padding-left: 3%;
+        padding-right: 1%;
+    }
+    h5 {
+        text-align: center;
+    }
+    /*Footer section css end*/
+    /*Wrapper section css start*/
+    .wrapper {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        grid-template-areas: 'header header header header' 'logo logo logo logo' 'nav nav nav nav' 'progressbar progressbar progressbar progressbar' 'smallMain smallMain smallMain smallMain' 'smallMain smallMain smallMain smallMain' 'foot foot foot foot'
+    }
+    /*Wrapper section css end*/
+    /*Form elements css start*/
+    .formElement {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .form-row {
+        display: flex;
+        justify-content: space-between;
+        margin: 3%;
+    }
+    .validateButton {
+        display: flex;
+        justify-content: flex-end;
+    }
+    /*Form elements css start*/
+    .logo {
+        height: 46px;
+    }
+    .navList {
+        justify-content: center;
+    }
+    /*Body Styles start*/
+    .banner {
+        padding-top: 0%;
+        background-image: linear-gradient(45deg, #3AAFA9, white);
+        margin-top: 0%;
+    }
+    .block {
+        border: 2px solid #3AAFA9;
+        font-style: italic;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        margin-left: 3px;
+        margin-right: 2px;
+        box-shadow: 5px 10px #888888
+    }
+    #sky {
+        width: 80%;
+        padding: 4%;
+        position: relative;
+    }
+    .right {
+        background-color: lavender;
+        font-style: italic;
+    }
+    .right p {
+        padding-left: 4%;
+    }
+    /*Body Styles end*/
+}
+
+
+/*Medium Screen*/
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    /* Progress bar css start*/
+    progress::-webkit-progress-value {
+        background: #3AAFA9;
+    }
+    progress {
+        margin-top: 1%;
+        margin-bottom: 1%;
+        height: 100%;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    /* Progress bar css end*/
+    .smallMain {
+        margin-top: 1%;
+    }
+    section {
+        display: none;
+    }
+    /*Form elements css start*/
+    .formElement {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .form-row {
+        display: flex;
+        justify-content: space-between;
+        margin: 3%;
+    }
+    /*Form elements css end*/
+    /*Wrapper section css start*/
+    .wrapper {
+        display: grid;
+        width: 95%;
+        margin: auto;
+        /*  background-color: lightblue;*/
+        grid-template-areas: 'header header' 'logo logo' 'nav nav' 'progressbar progressbar' 'smallMain smallMain' 'smallMain smallMain' 'foot foot'
+    }
+    /*Wrapper section css end*/
+    /*Poll section start*/
+    .pollOpinion {
+        display: none;
+    }
+    /*Poll section end*/
+    /*Blog section start*/
+    .blog {
+        display: none;
+    }
+    /*Blog section end*/
+    /*Body Styles start*/
+    .logo {
+        height: 50px;
+    }
+    .banner {
+        padding-top: 0%;
+        background-image: linear-gradient(45deg, #3AAFA9, white);
+        margin-top: 0%;
+    }
+    .block {
+        border: 1px solid #3AAFA9;
+        font-style: italic;
+        margin-top: 10px;
+        margin-left: 3px;
+        margin-right: 5px;
+        box-shadow: 5px 10px #888888
+    }
+    #sky {
+        width: 80%;
+        padding: 4%;
+        position: relative;
+    }
+    .right {
+        background-color: lavender;
+        font-style: italic;
+    }
+    .right p {
+        padding-left: 4%;
+    }
+    /*Body Styles end*/
+}
+
+
+/*Big Screen*/
+
+@media only screen and (min-width: 1201px) {
+    /* Progress bar css start*/
+    progress::-webkit-progress-value {
+        background: #3AAFA9;
+    }
+    progress {
+        margin-top: 1%;
+        margin-bottom: 1%;
+        height: 100%;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    /* Progress bar css end*/
+    /*Poll section start*/
+    .pollOpinion {
+        padding: 1%;
+        width: 70%;
+        margin: auto;
+        min-height: 364px;
+        margin-bottom: 1%;
+    }
+    .poll {
+        text-align: right;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+    }
+    .yes {
+        width: 90%;
+        background-color: #4CAF50;
+    }
+    .No {
+        width: 10%;
+        background-color: #2196F3;
+    }
+    /*Poll section end*/
+    /*Blog section start*/
+    .blog {
+        padding: 1%;
+        width: 70%;
+        margin: auto;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    /*Blog section end*/
+    /*Form elements css start*/
+    .formElement {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .form-row {
+        display: flex;
+        justify-content: space-between;
+        margin: 3%;
+    }
+    fieldset {
+        margin-bottom: 8%;
+        margin-top: 4%;
+    }
+    /*Form elements css end*/
+    .insuranceadv {
+        width: 50%;
+        height: 80%;
+        margin-top: 5%;
+        margin-left: 22%;
+    }
+    /*Wrapper css end*/
+    .wrapper {
+        display: grid;
+        width: 95%;
+        margin: auto;
+        grid-template-areas: 'header header header header ' 'logo logo logo logo ' 'nav nav nav nav ' 'advertisementFirst progressbar progressbar  blog' 'advertisementFirst  smallMain smallMain  blog' 'advertisementSecond smallMain smallMain   pollOpinion' 'advertisementSecond smallMain smallMain   pollOpinion' 'foot foot foot foot '
+    }
+    /*Wrapper css end*/
+    /*Body Styles start*/
+    .logo {
+        height: 46px;
+    }
+    .banner {
+        padding-top: 0%;
+        background-image: linear-gradient(45deg, #3AAFA9, white);
+        margin-top: 0%;
+    }
+    .right {
+        background-color: lavender;
+    }
+    .right p {
+        font-style: italic;
+        padding-left: 4%;
+    }
+    #sky {
+        width: 80%;
+        padding: 4%;
+        position: relative;
+    }
+    .block {
+        border: 1px solid #3AAFA9;
+        font-style: italic;
+        margin-left: 3px;
+        margin-right: 5px;
+        margin-top: 2px;
+        box-shadow: 5px 10px #888888
+    }
+    /*Body Styles end*/
+}

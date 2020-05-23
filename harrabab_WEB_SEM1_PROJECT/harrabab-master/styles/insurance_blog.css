@@ -1,0 +1,723 @@
+/*Body Css start*/
+
+body {
+    width: 100%;
+    height: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 0%;
+}
+
+#more {
+    display: none;
+}
+
+.showmore {
+    font-size: 1.1em;
+    margin-top: 1.5em;
+}
+
+.showmore .more,
+.showmore.show .dots {
+    display: none
+}
+
+.showmore.show .more {
+    display: inline
+}
+
+.showmore a {
+    cursor: pointer;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+button {
+    padding: 0;
+    border: 0px;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    /* show a hand cursor on hover; some argue that we
+    should keep the default arrow cursor for buttons */
+    cursor: pointer;
+    color: red;
+    font-display: bold;
+    font-size: 20px;
+}
+
+
+/*body Css end*/
+
+
+/*Footer Css start*/
+
+footer {
+    grid-area: foot;
+    background-color: #3AAFA9;
+    color: black;
+    text-align: center;
+    width: 100%;
+}
+
+li>a {
+    text-decoration: none;
+}
+
+.footerSection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.socialMediaIcon {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-left: 60%;
+}
+
+.socialMediaIcon li {
+    float: left;
+    padding: 3%;
+}
+
+.copyright {
+    width: 100%;
+}
+
+.footerColumnMenu {
+    width: 25%;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footerHelp {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footerColumnQuestion {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footerColumnQuote {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul.menuStyled,
+ul.locDet {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menuStyled li {
+    list-style-type: none;
+    padding-top: 12px;
+    text-align: left;
+}
+
+h2.footHeading {
+    text-align: left;
+}
+
+.menuStyled li a {
+    text-decoration: none;
+}
+
+.mySlides {
+    display: none;
+}
+
+mySlidesChange {
+    display: none;
+}
+
+.slideshow-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.slideshow-black,
+.slideshow-hover-black:hover {
+    color: #fff!important;
+    background-color: #f1f1f1
+}
+
+.slideshow-display-left {
+    position: absolute;
+    top: 90%;
+    left: 24%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(-0%, -50%)
+}
+
+.slideshow-display-right {
+    position: absolute;
+    top: 90%;
+    right: 20%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%)
+}
+
+.slideshow-center {
+    text-align: center!important
+}
+
+.slideshow-content {
+    max-width: 980px
+}
+
+.slideshow-auto {
+    max-width: 1140px
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.button1 {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.button1:hover {
+    background-color: gray;
+    color: white;
+}
+
+.button2 {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.button2:hover {
+    background-color: gray;
+    color: white;
+}
+
+.imagerotate {
+    width: 30%;
+    -webkit-animation: spin 3s linear infinite;
+    -moz-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+@-moz-keyframes spin {
+    50% {
+        -moz-transform: rotateY(90deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    50% {
+        -webkit-transform: rotateY(90deg);
+    }
+}
+
+@keyframes spin {
+    50% {
+        -webkit-transform: rotateY(90deg);
+        transform: rotateY(90deg);
+    }
+}
+
+.letters {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: crimson;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    perspective: 1200px;
+    overflow-x: hidden;
+}
+
+
+/*Footer Css end*/
+
+@media only screen and (max-width: 992px) {
+    /*Nav css start*/
+    .logo {
+        height: 40px;
+        width: 250px;
+        float: center;
+        padding-left: 90px;
+    }
+    .homeNav {
+        background-color: white;
+        grid-area: nav;
+        width: 100%;
+        margin: 0px;
+    }
+    .navList {
+        text-decoration: none;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 1.5%;
+        margin: 0px;
+    }
+    .navList li a {
+        text-decoration: none;
+        list-style-type: none;
+        color: #3AAFA9;
+        font-weight: bold;
+        width: 10%;
+        padding-top: 1.5%;
+        margin-right: 20px;
+        font-size: 12px;
+    }
+    /*Nav css end*/
+    /* Body content css start*/
+    .image8 {
+        float: left;
+        width: 200px;
+        height: 50px;
+        background-color: #DEF2F1;
+    }
+    .image8 {
+        float: left;
+        width: 200px;
+        height: 50px;
+        background-color: #DEF2F1;
+    }
+    #header1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: #3AAFA9;
+        padding: 0px;
+        height: 40px;
+        width: 100%;
+    }
+    #header1 p {
+        font-size: 10px;
+        color: #25274D;
+    }
+    .image3 {
+        width: 40%;
+        height: 1%;
+        float: left;
+        padding-left: 30%;
+        padding-right: 50%;
+        padding-top: 3%;
+    }
+    .image2 {
+        float: right;
+    }
+    .content {
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color: white;
+    }
+    .section1 {
+        border: 1px dotted steelblue;
+        border-bottom: 1px dotted steelblue;
+        font-style: italic;
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color: #DEF2F1;
+        margin: 1%;
+    }
+    .section1 h2 {
+        color: steelblue;
+    }
+    .section1 p {
+        font-size: 17px;
+        padding-left: 0px;
+    }
+    .image2 {
+        padding: 0.5%;
+        margin-bottom: 1%;
+        border: 1px solid red;
+    }
+    .section1 h4 {
+        color: red;
+    }
+    .main {
+        border: 2px solid #3AAFA9;
+        box-shadow: 2px 2px #3AAFA9;
+    }
+    ol li {
+        counter-increment: list;
+        list-style-type: none;
+        position: relative;
+    }
+    ol li:before {
+        color: #e75204;
+        content: counter(list) ".";
+        left: -32px;
+        position: absolute;
+        text-align: right;
+        width: 26px;
+    }
+    body {
+        width: 100%;
+        height: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+    h5 {
+        text-align: center;
+    }
+    /* Body content css end*/
+    /* Footer css start*/
+    .footerColumnQuestion {
+        margin-left: 2%;
+        padding-left: 3%;
+        padding-right: 1%;
+    }
+    .footerColumnQuestion {
+        margin-left: 2%;
+        padding-left: 3%;
+        padding-right: 1%;
+        font-size: 10px;
+    }
+    .footerColumnQuote p {
+        font-size: 10px;
+    }
+    .footerColumnMenu {
+        font-size: 10px;
+    }
+    .footerHelp {
+        font-size: 10px;
+    }
+    .footHeading {
+        font-size: 10px;
+    }
+    h5 {
+        text-align: center;
+    }
+    footer {
+        grid-area: foot;
+        background-color: #3AAFA9;
+        color: black;
+        text-align: center;
+        width: 100%;
+    }
+    /*Footer section css end*/
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    /* Nav css start*/
+    .logo {
+        height: 40px;
+        width: 250px;
+    }
+    .homeNav {
+        background-color: white;
+        grid-area: nav;
+        width: 100%;
+        margin: 0px;
+    }
+    .navList {
+        text-decoration: none;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        padding: 1.5%;
+        margin: 0px;
+    }
+    .navList li a {
+        text-decoration: none;
+        list-style-type: none;
+        color: #3AAFA9;
+        font-weight: bold;
+        width: 30%;
+        padding-top: 1.5%;
+        margin-right: 20px;
+    }
+    /* Nav css end*/
+    /* body content css start*/
+    .body {
+        width: 100%;
+    }
+    #header1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: #3AAFA9;
+        padding: 0px;
+        height: 40px;
+    }
+    #header1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: #3AAFA9;
+    }
+    #header1 p {
+        font-size: 15px;
+        color: #25274D;
+    }
+    #header {
+        height: 13%;
+        background-color: #ffffff;
+        color: #000000;
+        overflow: hidden;
+    }
+    .image3 {
+        width: 40%;
+        height: 1%;
+        float: left;
+        padding-left: 30%;
+        padding-right: 50%;
+        padding-top: 3%;
+    }
+    .image2 {
+        float: right;
+    }
+    .content {
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color: white;
+    }
+    .section1 {
+        border: 1px dotted steelblue;
+        border-bottom: 1px dotted steelblue;
+        font-style: italic;
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color: #DEF2F1;
+        margin: 1%;
+    }
+    .section1 h2 {
+        color: steelblue;
+    }
+    .section1 p {
+        font-size: 17px;
+        padding-left: 0px;
+    }
+    .image2 {
+        padding: 0.5%;
+        margin-bottom: 1%;
+        border: 1px solid red;
+    }
+    .section1 h4 {
+        color: red;
+    }
+    .main {
+        border: 2px solid #3AAFA9;
+        box-shadow: 2px 2px #3AAFA9;
+    }
+    /* body content css end*/
+}
+
+@media only screen and (min-width: 1201px) {
+    /* Nav css start*/
+    .logo {
+        height: 40px;
+        width: 250px;
+        padding-left: 0%;
+        margin-left: 0%;
+        float: left;
+    }
+    .homeNav {
+        background-color: white;
+        grid-area: nav;
+        width: 100%;
+        margin: 0px;
+    }
+    .homeNav figure {
+        width: 200px;
+        height: 5px;
+    }
+    .navList {
+        text-decoration: none;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        padding: 1.5%;
+        margin: 0px;
+    }
+    .navList li a {
+        text-decoration: none;
+        list-style-type: none;
+        color: #3AAFA9;
+        font-weight: bold;
+        width: 30%;
+        padding-top: 1.5%;
+        margin-right: 20px;
+    }
+    /* Nav css end */
+    /* Body css start */
+    #header1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: #3AAFA9;
+        padding: 0px;
+        height: 50px;
+    }
+    #header1 p {
+        font-size: 15px;
+        color: #25274D;
+    }
+    .image3 {
+        width: 40%;
+        height: 1%;
+        float: left;
+        padding-left: 30%;
+        padding-right: 50%;
+        padding-top: 3%;
+    }
+    .image2 {
+        float: right;
+    }
+    /* Body css end */
+    /* Footer css start*/
+    .footer_section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .mouse-icon {
+        float: center;
+    }
+    .footer_column {
+        width: 207px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    .social-media-icon {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .social-media-icon li {
+        float: left;
+        padding: 25px;
+    }
+    ;
+    .foot_heading {
+        text-align: left!important;
+    }
+    .foot_heading_help {
+        text-align: left!important;
+    }
+    ul.menu_styled,
+    ul.loc_det {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .menu_styled li {
+        list-style-type: none;
+        padding-top: 12px;
+        text-align: left;
+    }
+    ;
+    h2.foot_heading {
+        text-align: left;
+    }
+    .loc_det li {
+        list-style-type: none;
+        text-align: left;
+        padding-top: 12px;
+    }
+    ;
+    .menu_styled li a {
+        text-decoration: none;
+    }
+    ;
+    .content {
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color: white;
+    }
+    .section1 {
+        border: 1px dotted steelblue;
+        border-bottom: 1px dotted steelblue;
+        font-style: italic;
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color: #DEF2F1;
+        margin: 1%;
+    }
+    .section1 h2 {
+        color: steelblue;
+    }
+    .section1 p {
+        font-size: 17px;
+        padding-left: 0px;
+    }
+    .image2 {
+        padding: 0.5%;
+        margin-bottom: 1%;
+        width: 300px;
+        height: 250px;
+        border: 1px solid red;
+    }
+    .section1 h4 {
+        color: red;
+    }
+    .main {
+        border: 2px solid #3AAFA9;
+        box-shadow: 2px 2px #3AAFA9;
+    }
+    ol li {
+        counter-increment: list;
+        list-style-type: none;
+        position: relative;
+    }
+    ol li:before {
+        color: #e75204;
+        content: counter(list) ".";
+        left: -32px;
+        position: absolute;
+        text-align: right;
+        width: 26px;
+    }
+    figure {
+        width: 100px;
+        height: 36px;
+    }
+    /* Footer css end*/
+}
