@@ -143,8 +143,6 @@ function writeInLanguage() {
     let home = document.getElementById("home_text");
     let homeInsurance = document.getElementById("home_insurance");
     let autoInsurance = document.getElementById("auto_insurance");
-    let contactus = document.getElementById("contact_us");
-    let blog = document.getElementById("blog");
     let process = document.getElementById("process");
     let home_insurance_heading = document.getElementById("home_insurance_heading");
     let auto_insurance_heading = document.getElementById("auto_insurance_heading");
@@ -168,8 +166,6 @@ function writeInLanguage() {
     let nav_home = document.getElementById("nav_home");
     let nav_home_insurance = document.getElementById("nav_home_insurance");
     let nav_auto_insurance = document.getElementById("nav_auto_insurance");
-    let nav_blog = document.getElementById("nav_blog");
-    let nav_faq = document.getElementById("nav_faq");
     let nav_claims = document.getElementById("nav_claims");
     let help = document.getElementById("help");
     let home_insurance_detail = document.getElementById("home_insurance_detail");
@@ -217,8 +213,6 @@ function writeInLanguage() {
     homeInsurance.innerText = translate_home_insurance;
     autoInsurance.innerText = translate_auto_insurance;
     autoInsurance.innerText = translate_auto_insurance;
-    contactus.innerText = translate_contact_us;
-    blog.innerText = translate_blog;
     process.innerText = translate_process;
     blog_heading.innerText = translate_blog;
     blog_heading_1.innerText = translate_blog_heading_1;
@@ -238,8 +232,6 @@ function writeInLanguage() {
     nav_home.innerText = translate_home;
     nav_home_insurance.innerText = translate_home_insurance;
     nav_auto_insurance.innerText = translate_auto_insurance;
-    nav_blog.innerText = translate_blog;
-    nav_faq.innerText = translate_auto_insurance;
     nav_claims.innerText = translate_nav_claims;
     help.innerText = translate_help;
     home_insurance_heading.innerText = translate_home_insurance_heading;
